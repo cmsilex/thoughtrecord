@@ -28,10 +28,12 @@ class ThoughtRecord implements ServiceProviderInterface, BootableProviderInterfa
         $thoughtEntity->setDefaultPageLimit(100);
         $thoughtEntity->addColumn('Where were you?', 'where');
         $thoughtEntity->addColumn('Emotion or Feeling', 'emotionOrFeeling');
+        $thoughtEntity->addColumn('Strength of Emotion or Feeling', 'strengthOfEmotionOrFeeling');
         $thoughtEntity->addColumn('Evidence that supports the thought', 'supportingEvidence');
         $thoughtEntity->addColumn('Evidence that does not support the thought', 'unsupportingEvidence');
         $thoughtEntity->addColumn('Alternative Thought', 'alternativeThought');
         $thoughtEntity->addColumn('Alternative Emotion or Feeling', 'alternativeEmotionOrFeeling');
+        $thoughtEntity->addColumn('Strength of Alternative Emotion or Feeling', 'strengthOfAlternativeEmotionOrFeeling');
         $thoughtEntity->addColumn('Time of day', function (Record $record) {
             return $record->getTimeOfDay()->format('Y-m-d H:i:s');
         });

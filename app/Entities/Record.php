@@ -27,6 +27,9 @@ class Record
     /** @Column(type="text") */
     protected $emotionOrFeeling;
 
+    /** @Column(type="integer") */
+    protected $strengthOfEmotionOrFeeling;
+
     /** @Column(type="text") */
     protected $negativeThought;
 
@@ -41,6 +44,9 @@ class Record
 
     /** @Column(type="text") */
     protected $alternativeEmotionOrFeeling;
+
+    /** @Column(type="integer") */
+    protected $strengthOfAlternativeEmotionOrFeeling;
 
     /**
      * @return mixed
@@ -104,6 +110,22 @@ class Record
     public function setEmotionOrFeeling($emotionOrFeeling)
     {
         $this->emotionOrFeeling = $emotionOrFeeling;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getStrengthOfEmotionOrFeeling()
+    {
+        return $this->strengthOfEmotionOrFeeling;
+    }
+
+    /**
+     * @param mixed $strengthOfEmotionOrFeeling
+     */
+    public function setStrengthOfEmotionOrFeeling($strengthOfEmotionOrFeeling)
+    {
+        $this->strengthOfEmotionOrFeeling = $strengthOfEmotionOrFeeling;
     }
 
     /**
@@ -184,5 +206,21 @@ class Record
     public function setAlternativeEmotionOrFeeling($alternativeEmotionOrFeeling)
     {
         $this->alternativeEmotionOrFeeling = $alternativeEmotionOrFeeling;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getStrengthOfAlternativeEmotionOrFeeling()
+    {
+        return $this->strengthOfAlternativeEmotionOrFeeling;
+    }
+
+    /**
+     * @param mixed $strengthOfAlternativeEmotionOrFeeling
+     */
+    public function setStrengthOfAlternativeEmotionOrFeeling($strengthOfAlternativeEmotionOrFeeling)
+    {
+        $this->strengthOfAlternativeEmotionOrFeeling = $strengthOfAlternativeEmotionOrFeeling;
     }
 }

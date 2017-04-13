@@ -26,7 +26,7 @@ class ThoughtRecord implements ServiceProviderInterface, BootableProviderInterfa
     {
         $thoughtEntity = new CMSEntity(Record::class, RecordType::class);
         $thoughtEntity->setDefaultPageLimit(100);
-        $thoughtEntity->addColumn('Where were you?', 'where');
+        $thoughtEntity->addColumn('Where were you?', 'location');
         $thoughtEntity->addColumn('Emotion or Feeling', 'emotionOrFeeling');
         $thoughtEntity->addColumn('Strength of Emotion or Feeling', 'strengthOfEmotionOrFeeling');
         $thoughtEntity->addColumn('Evidence that supports the thought', 'supportingEvidence');

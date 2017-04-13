@@ -14,7 +14,7 @@ class RecordType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('where', TextType::class, [
+            ->add('location', TextType::class, [
                 'label' => 'Where were you?'
             ])
             ->add('emotionOrFeeling', TextType::class)

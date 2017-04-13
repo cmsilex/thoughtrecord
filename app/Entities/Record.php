@@ -22,7 +22,7 @@ class Record
     protected $timeOfDay;
 
     /** @Column(type="text") */
-    protected $where;
+    protected $location;
 
     /** @Column(type="text") */
     protected $emotionOrFeeling;
@@ -83,17 +83,17 @@ class Record
     /**
      * @return mixed
      */
-    public function getWhere()
+    public function getLocation()
     {
-        return $this->where;
+        return $this->location;
     }
 
     /**
-     * @param mixed $where
+     * @param mixed $location
      */
-    public function setWhere($where)
+    public function setLocation($location)
     {
-        $this->where = $where;
+        $this->location = $location;
     }
 
     /**

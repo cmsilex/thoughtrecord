@@ -10,7 +10,7 @@ use Pimple\ServiceProviderInterface;
 use Silex\Api\BootableProviderInterface;
 use Silex\Application;
 
-class MoodTracker implements ServiceProviderInterface, BootableProviderInterface
+class ThoughtRecord implements ServiceProviderInterface, BootableProviderInterface
 {
     public function register(Container $container)
     {

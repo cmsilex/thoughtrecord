@@ -1,0 +1,17 @@
+{
+    "name": "cmsilex/thoughtrecord",
+    "description": "Record your thoughts.",
+    "authors": [
+        {
+            "name": "Leigh Murray",
+            "email": "leighmurray@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "CMSilex\\ThoughtRecord\\": "app/"
+        }
+    }
+}

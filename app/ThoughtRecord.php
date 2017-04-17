@@ -29,6 +29,7 @@ class ThoughtRecord implements ServiceProviderInterface, BootableProviderInterfa
         $thoughtEntity->addColumn('Where were you?', 'location');
         $thoughtEntity->addColumn('Emotion or Feeling', 'emotionOrFeeling');
         $thoughtEntity->addColumn('Strength of Emotion or Feeling', 'strengthOfEmotionOrFeeling');
+        $thoughtEntity->addColumn('Negative Thought', 'negativeThought');
         $thoughtEntity->addColumn('Evidence that supports the thought', 'supportingEvidence');
         $thoughtEntity->addColumn('Evidence that does not support the thought', 'unsupportingEvidence');
         $thoughtEntity->addColumn('Alternative Thought', 'alternativeThought');
